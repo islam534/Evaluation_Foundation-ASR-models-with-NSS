@@ -1,0 +1,61 @@
+Model: Hubert
+File: C:\Users\A-plus store\OneDrive - MOE Stem Schools\Desktop\Work Done\Before Training Eval\Hubert_Evaluation_results.csv
+Analysis Date: 2025-02-13 18:32:26
+================================================================================
+
+Overall Shape: 3172 rows x 9 columns
+
+Column 'Actual' Data Type: object
+Unique values in 'Actual': 504
+Column 'Predicted' Data Type: object
+Unique values in 'Predicted': 1984
+--------------------------------------------------------------------------------
+Descriptive Statistics for Text Similarity Metrics:
+       sequence_ratio  jaccard_sim  exact_match  word_count_actual  word_count_predicted  word_count_diff
+count     3172.000000  3172.000000  3172.000000        3172.000000           3172.000000      3172.000000
+mean         0.589396     0.212886     0.137137           2.634615              2.925284         0.721311
+std          0.310904     0.364256     0.344047           2.987492              4.752907         3.837919
+min          0.000000     0.000000     0.000000           1.000000              0.000000         0.000000
+25%          0.333333     0.000000     0.000000           1.000000              1.000000         0.000000
+50%          0.600000     0.000000     0.000000           1.000000              1.000000         0.000000
+75%          0.869706     0.279762     0.000000           4.000000              3.000000         0.000000
+max          1.000000     1.000000     1.000000          14.000000            109.000000       108.000000
+--------------------------------------------------------------------------------
+Overall Exact Match Percentage: 13.71%
+Mean Sequence Similarity Ratio: 0.5894
+Median Sequence Similarity Ratio: 0.6000
+Mean Jaccard Similarity: 0.2129
+Median Jaccard Similarity: 0.0000
+--------------------------------------------------------------------------------
+Top 10 Frequent Words in Actual Texts:
+the    284
+in     166
+a      162
+to     127
+he     120
+as     106
+i      102
+is      97
+for     79
+of      68
+----------------------------------------
+Top 10 Frequent Words in Predicted Texts:
+a      300
+the    229
+i      173
+to     157
+in     114
+he      96
+e       96
+and     89
+o       84
+of      83
+--------------------------------------------------------------------------------
+Generated Plots:
+ - text_analysis_reports\plots\Hubert_Hubert_Evaluation_results_sequence_ratio_hist.png
+ - text_analysis_reports\plots\Hubert_Hubert_Evaluation_results_jaccard_similarity_hist.png
+ - text_analysis_reports\plots\Hubert_Hubert_Evaluation_results_wordcount_vs_seqratio.png
+ - text_analysis_reports\plots\Hubert_Hubert_Evaluation_results_similarity_boxplot.png
+ - text_analysis_reports\plots\Hubert_Hubert_Evaluation_results_actual_wordcloud.png
+ - text_analysis_reports\plots\Hubert_Hubert_Evaluation_results_predicted_wordcloud.png
+================================================================================

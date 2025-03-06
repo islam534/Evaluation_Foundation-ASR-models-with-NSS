@@ -1,0 +1,61 @@
+Model: wav2vec2
+File: C:\Users\A-plus store\OneDrive - MOE Stem Schools\Desktop\Work Done\Before Training Eval\wav2vec2_asr_evaluation_results.csv
+Analysis Date: 2025-02-13 18:32:28
+================================================================================
+
+Overall Shape: 3290 rows x 14 columns
+
+Column 'Actual' Data Type: object
+Unique values in 'Actual': 528
+Column 'Predicted' Data Type: object
+Unique values in 'Predicted': 2194
+--------------------------------------------------------------------------------
+Descriptive Statistics for Text Similarity Metrics:
+       sequence_ratio  jaccard_sim  exact_match  word_count_actual  word_count_predicted  word_count_diff
+count     3290.000000  3290.000000  3290.000000        3290.000000           3290.000000      3290.000000
+mean         0.359963     0.092565     0.064134           2.635866              2.962310         1.750152
+std          0.305964     0.262103     0.245028           2.979395              4.881425         4.392240
+min          0.000000     0.000000     0.000000           1.000000              0.000000         0.000000
+25%          0.102564     0.000000     0.000000           1.000000              1.000000         0.000000
+50%          0.285714     0.000000     0.000000           1.000000              1.000000         0.000000
+75%          0.571429     0.000000     0.000000           4.000000              3.000000         2.000000
+max          1.000000     1.000000     1.000000          14.000000            111.000000       110.000000
+--------------------------------------------------------------------------------
+Overall Exact Match Percentage: 6.41%
+Mean Sequence Similarity Ratio: 0.3600
+Median Sequence Similarity Ratio: 0.2857
+Mean Jaccard Similarity: 0.0926
+Median Jaccard Similarity: 0.0000
+--------------------------------------------------------------------------------
+Top 10 Frequent Words in Actual Texts:
+the    284
+in     197
+a      169
+to     129
+he     121
+as     108
+i      102
+is      96
+for     83
+of      69
+----------------------------------------
+Top 10 Frequent Words in Predicted Texts:
+a      269
+the    267
+i      217
+to     147
+he     124
+you    118
+and    104
+o       97
+in      91
+e       84
+--------------------------------------------------------------------------------
+Generated Plots:
+ - text_analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_sequence_ratio_hist.png
+ - text_analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_jaccard_similarity_hist.png
+ - text_analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_wordcount_vs_seqratio.png
+ - text_analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_similarity_boxplot.png
+ - text_analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_actual_wordcloud.png
+ - text_analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_predicted_wordcloud.png
+================================================================================

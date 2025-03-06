@@ -1,0 +1,94 @@
+Model: Hubert
+File: C:\Users\A-plus store\OneDrive - MOE Stem Schools\Desktop\Work Done\Before Training Eval\Hubert_Evaluation_results.csv
+Analysis Date: 2025-02-13 18:18:36
+================================================================================
+
+Overall Shape: 3172 rows x 9 columns
+
+Column Data Types:
+Prompt_File     object
+Audio_File      object
+Actual          object
+Predicted       object
+WER            float64
+CER            float64
+MER            float64
+WIL            float64
+WIP            float64
+
+--------------------------------------------------------------------------------
+Missing Values and Unique Counts per Column:
+Column 'Prompt_File': Missing = 0, Unique = 421
+Column 'Audio_File': Missing = 0, Unique = 421
+Column 'Actual': Missing = 0, Unique = 504
+Column 'Predicted': Missing = 2, Unique = 1984
+Column 'WER': Missing = 0, Unique = 120
+Column 'CER': Missing = 0, Unique = 469
+Column 'MER': Missing = 0, Unique = 72
+Column 'WIL': Missing = 0, Unique = 168
+Column 'WIP': Missing = 0, Unique = 168
+
+--------------------------------------------------------------------------------
+Descriptive Statistics (Numeric Columns):
+               WER          CER          MER          WIL          WIP
+count  3172.000000  3172.000000  3172.000000  3172.000000  3172.000000
+mean      1.109005     0.575552     0.769019     0.799451     0.200549
+std       3.659953     0.847683     0.377188     0.361973     0.361973
+min       0.000000     0.000000     0.000000     0.000000     0.000000
+25%       0.666667     0.200000     0.600000     0.812500     0.000000
+50%       1.000000     0.500000     1.000000     1.000000     0.000000
+75%       1.000000     0.761905     1.000000     1.000000     0.187500
+max     109.000000    25.476190     1.000000     1.000000     1.000000
+
+--------------------------------------------------------------------------------
+Top 5 Frequent Values for Categorical Columns:
+
+Column 'Prompt_File':
+Prompt_File
+0081.txt    15
+0082.txt    15
+0083.txt    15
+0087.txt    15
+0089.txt    15
+
+Column 'Audio_File':
+Audio_File
+0081.wav    15
+0082.wav    15
+0083.wav    15
+0087.wav    15
+0089.wav    15
+
+Column 'Actual':
+Actual
+SIGH    28
+SIP     25
+NO      25
+AIR     24
+KNEW    24
+
+Column 'Predicted':
+Predicted
+A     66
+NO    52
+E     36
+I     33
+O     33
+
+--------------------------------------------------------------------------------
+Correlation Matrix (Numeric Columns):
+          WER       CER       MER       WIL       WIP
+WER  1.000000  0.817591  0.157588  0.151567 -0.151567
+CER  0.817591  1.000000  0.358409  0.342659 -0.342659
+MER  0.157588  0.358409  1.000000  0.983984 -0.983984
+WIL  0.151567  0.342659  0.983984  1.000000 -1.000000
+WIP -0.151567 -0.342659 -0.983984 -1.000000  1.000000
+
+================================================================================
+Generated Plots:
+ - analysis_reports\plots\Hubert_Hubert_Evaluation_results_correlation_heatmap.png
+ - analysis_reports\plots\Hubert_Hubert_Evaluation_results_WER_histogram.png
+ - analysis_reports\plots\Hubert_Hubert_Evaluation_results_CER_histogram.png
+ - analysis_reports\plots\Hubert_Hubert_Evaluation_results_MER_histogram.png
+ - analysis_reports\plots\Hubert_Hubert_Evaluation_results_WIL_histogram.png
+ - analysis_reports\plots\Hubert_Hubert_Evaluation_results_WIP_histogram.png

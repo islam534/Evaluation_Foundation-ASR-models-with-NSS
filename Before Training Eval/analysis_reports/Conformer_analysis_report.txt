@@ -1,0 +1,94 @@
+Model: Conformer
+File: C:\Users\A-plus store\OneDrive - MOE Stem Schools\Desktop\Work Done\Before Training Eval\Conformer_Evaluation_results.csv
+Analysis Date: 2025-02-13 18:18:36
+================================================================================
+
+Overall Shape: 2356 rows x 9 columns
+
+Column Data Types:
+Prompt_File     object
+Audio_File      object
+Actual          object
+Predicted       object
+WER            float64
+CER            float64
+MER            float64
+WIL            float64
+WIP            float64
+
+--------------------------------------------------------------------------------
+Missing Values and Unique Counts per Column:
+Column 'Prompt_File': Missing = 0, Unique = 414
+Column 'Audio_File': Missing = 0, Unique = 414
+Column 'Actual': Missing = 0, Unique = 472
+Column 'Predicted': Missing = 1, Unique = 1716
+Column 'WER': Missing = 0, Unique = 109
+Column 'CER': Missing = 0, Unique = 498
+Column 'MER': Missing = 0, Unique = 70
+Column 'WIL': Missing = 0, Unique = 164
+Column 'WIP': Missing = 0, Unique = 165
+
+--------------------------------------------------------------------------------
+Descriptive Statistics (Numeric Columns):
+               WER          CER          MER          WIL          WIP
+count  2356.000000  2356.000000  2356.000000  2356.000000  2356.000000
+mean      1.208656     0.651771     0.789252     0.827140     0.172860
+std       4.276692     0.982586     0.346374     0.324335     0.324335
+min       0.000000     0.000000     0.000000     0.000000     0.000000
+25%       0.714286     0.250000     0.666667     0.851190     0.000000
+50%       1.000000     0.600000     1.000000     1.000000     0.000000
+75%       1.000000     0.800000     1.000000     1.000000     0.148810
+max     113.000000    25.952381     1.000000     1.000000     1.000000
+
+--------------------------------------------------------------------------------
+Top 5 Frequent Values for Categorical Columns:
+
+Column 'Prompt_File':
+Prompt_File
+0090.txt    13
+0004.txt    13
+0125.txt    13
+0098.txt    13
+0032.txt    13
+
+Column 'Audio_File':
+Audio_File
+0090.wav    13
+0004.wav    13
+0125.wav    13
+0098.wav    13
+0032.wav    13
+
+Column 'Actual':
+Actual
+NO                      21
+SLIP                    15
+AIR                     15
+SAY AH FOR 5 SECONDS    15
+SIGH                    15
+
+Column 'Predicted':
+Predicted
+I     52
+R     43
+NO    33
+L     28
+O     27
+
+--------------------------------------------------------------------------------
+Correlation Matrix (Numeric Columns):
+          WER       CER       MER       WIL       WIP
+WER  1.000000  0.801544  0.138034  0.129987 -0.129987
+CER  0.801544  1.000000  0.327878  0.307726 -0.307726
+MER  0.138034  0.327878  1.000000  0.978684 -0.978684
+WIL  0.129987  0.307726  0.978684  1.000000 -1.000000
+WIP -0.129987 -0.307726 -0.978684 -1.000000  1.000000
+
+================================================================================
+Generated Plots:
+ - analysis_reports\plots\Conformer_Conformer_Evaluation_results_correlation_heatmap.png
+ - analysis_reports\plots\Conformer_Conformer_Evaluation_results_WER_histogram.png
+ - analysis_reports\plots\Conformer_Conformer_Evaluation_results_CER_histogram.png
+ - analysis_reports\plots\Conformer_Conformer_Evaluation_results_MER_histogram.png
+ - analysis_reports\plots\Conformer_Conformer_Evaluation_results_WIL_histogram.png
+ - analysis_reports\plots\Conformer_Conformer_Evaluation_results_WIP_histogram.png

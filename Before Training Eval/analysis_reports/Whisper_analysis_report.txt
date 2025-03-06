@@ -1,0 +1,90 @@
+Model: Whisper
+File: C:\Users\A-plus store\OneDrive - MOE Stem Schools\Desktop\Work Done\Before Training Eval\whisper_asr_evaluation_results.csv
+Analysis Date: 2025-02-13 18:18:39
+================================================================================
+
+Overall Shape: 3290 rows x 8 columns
+
+Column Data Types:
+Prompt_File     object
+Audio_File      object
+Actual          object
+Predicted       object
+WER            float64
+CER            float64
+MER            float64
+WIL            float64
+
+--------------------------------------------------------------------------------
+Missing Values and Unique Counts per Column:
+Column 'Prompt_File': Missing = 0, Unique = 421
+Column 'Audio_File': Missing = 0, Unique = 421
+Column 'Actual': Missing = 0, Unique = 531
+Column 'Predicted': Missing = 0, Unique = 2044
+Column 'WER': Missing = 0, Unique = 130
+Column 'CER': Missing = 0, Unique = 492
+Column 'MER': Missing = 0, Unique = 72
+Column 'WIL': Missing = 0, Unique = 155
+
+--------------------------------------------------------------------------------
+Descriptive Statistics (Numeric Columns):
+               WER          CER          MER          WIL
+count  3290.000000  3290.000000  3290.000000  3290.000000
+mean      1.796175     2.078442     0.813769     0.838053
+std      11.742634    16.001281     0.351857     0.333951
+min       0.000000     0.000000     0.000000     0.000000
+25%       1.000000     0.250000     0.875000     0.982440
+50%       1.000000     0.666667     1.000000     1.000000
+75%       1.000000     1.000000     1.000000     1.000000
+max     444.000000   592.333333     1.000000     1.000000
+
+--------------------------------------------------------------------------------
+Top 5 Frequent Values for Categorical Columns:
+
+Column 'Prompt_File':
+Prompt_File
+0078.txt    15
+0097.txt    15
+0082.txt    15
+0085.txt    15
+0083.txt    15
+
+Column 'Audio_File':
+Audio_File
+0078.wav    15
+0097.wav    15
+0082.wav    15
+0085.wav    15
+0083.wav    15
+
+Column 'Actual':
+Actual
+[relax your mouth in its normal position]    32
+sip                                          31
+sigh                                         28
+slip                                         25
+air                                          25
+
+Column 'Predicted':
+Predicted
+No.      53
+you      44
+Oh       22
+Bye      22
+What?    21
+
+--------------------------------------------------------------------------------
+Correlation Matrix (Numeric Columns):
+          WER       CER       MER       WIL
+WER  1.000000  0.684954  0.073455  0.069706
+CER  0.684954  1.000000  0.065409  0.061074
+MER  0.073455  0.065409  1.000000  0.985127
+WIL  0.069706  0.061074  0.985127  1.000000
+
+================================================================================
+Generated Plots:
+ - analysis_reports\plots\Whisper_whisper_asr_evaluation_results_correlation_heatmap.png
+ - analysis_reports\plots\Whisper_whisper_asr_evaluation_results_WER_histogram.png
+ - analysis_reports\plots\Whisper_whisper_asr_evaluation_results_CER_histogram.png
+ - analysis_reports\plots\Whisper_whisper_asr_evaluation_results_MER_histogram.png
+ - analysis_reports\plots\Whisper_whisper_asr_evaluation_results_WIL_histogram.png

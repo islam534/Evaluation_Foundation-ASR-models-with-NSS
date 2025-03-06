@@ -1,0 +1,61 @@
+Model: Whisper
+File: C:\Users\A-plus store\OneDrive - MOE Stem Schools\Desktop\Work Done\Before Training Eval\whisper_asr_evaluation_results.csv
+Analysis Date: 2025-02-13 18:32:29
+================================================================================
+
+Overall Shape: 3290 rows x 8 columns
+
+Column 'Actual' Data Type: object
+Unique values in 'Actual': 531
+Column 'Predicted' Data Type: object
+Unique values in 'Predicted': 2044
+--------------------------------------------------------------------------------
+Descriptive Statistics for Text Similarity Metrics:
+       sequence_ratio  jaccard_sim  exact_match  word_count_actual  word_count_predicted  word_count_diff
+count     3290.000000  3290.000000  3290.000000        3290.000000           3290.000000      3290.000000
+mean         0.621721     0.372148     0.309422           2.641641              4.739514         2.529483
+std          0.344282     0.454197     0.462326           2.981166             25.823251        25.475566
+min          0.000000     0.000000     0.000000           1.000000              1.000000         0.000000
+25%          0.307692     0.000000     0.000000           1.000000              1.000000         0.000000
+50%          0.666667     0.000000     0.000000           1.000000              1.000000         0.000000
+75%          1.000000     1.000000     1.000000           4.000000              3.000000         0.000000
+max          1.000000     1.000000     1.000000          14.000000            445.000000       443.000000
+--------------------------------------------------------------------------------
+Overall Exact Match Percentage: 30.94%
+Mean Sequence Similarity Ratio: 0.6217
+Median Sequence Similarity Ratio: 0.6667
+Mean Jaccard Similarity: 0.3721
+Median Jaccard Similarity: 0.0000
+--------------------------------------------------------------------------------
+Top 10 Frequent Words in Actual Texts:
+the    286
+in     192
+a      170
+to     130
+he     121
+as     109
+i      102
+is      99
+for     85
+of      70
+----------------------------------------
+Top 10 Frequent Words in Predicted Texts:
+happy      1345
+a           886
+white       449
+perfect     447
+the         395
+of          333
+it          326
+my          267
+bit         250
+little      250
+--------------------------------------------------------------------------------
+Generated Plots:
+ - text_analysis_reports\plots\Whisper_whisper_asr_evaluation_results_sequence_ratio_hist.png
+ - text_analysis_reports\plots\Whisper_whisper_asr_evaluation_results_jaccard_similarity_hist.png
+ - text_analysis_reports\plots\Whisper_whisper_asr_evaluation_results_wordcount_vs_seqratio.png
+ - text_analysis_reports\plots\Whisper_whisper_asr_evaluation_results_similarity_boxplot.png
+ - text_analysis_reports\plots\Whisper_whisper_asr_evaluation_results_actual_wordcloud.png
+ - text_analysis_reports\plots\Whisper_whisper_asr_evaluation_results_predicted_wordcloud.png
+================================================================================

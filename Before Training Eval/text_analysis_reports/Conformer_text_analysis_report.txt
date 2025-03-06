@@ -1,0 +1,61 @@
+Model: Conformer
+File: C:\Users\A-plus store\OneDrive - MOE Stem Schools\Desktop\Work Done\Before Training Eval\Conformer_Evaluation_results.csv
+Analysis Date: 2025-02-13 18:32:24
+================================================================================
+
+Overall Shape: 2356 rows x 9 columns
+
+Column 'Actual' Data Type: object
+Unique values in 'Actual': 472
+Column 'Predicted' Data Type: object
+Unique values in 'Predicted': 1716
+--------------------------------------------------------------------------------
+Descriptive Statistics for Text Similarity Metrics:
+       sequence_ratio  jaccard_sim  exact_match  word_count_actual  word_count_predicted  word_count_diff
+count     2356.000000  2356.000000  2356.000000        2356.000000           2356.000000      2356.000000
+mean         0.553104     0.188641     0.090832           3.147708              3.422326         0.975806
+std          0.306574     0.328744     0.287431           3.270053              5.334851         4.459186
+min          0.000000     0.000000     0.000000           1.000000              0.000000         0.000000
+25%          0.320000     0.000000     0.000000           1.000000              1.000000         0.000000
+50%          0.548166     0.000000     0.000000           1.000000              1.000000         0.000000
+75%          0.857143     0.235294     0.000000           6.000000              5.000000         1.000000
+max          1.000000     1.000000     1.000000          14.000000            113.000000       112.000000
+--------------------------------------------------------------------------------
+Overall Exact Match Percentage: 9.08%
+Mean Sequence Similarity Ratio: 0.5531
+Median Sequence Similarity Ratio: 0.5482
+Mean Jaccard Similarity: 0.1886
+Median Jaccard Similarity: 0.0000
+--------------------------------------------------------------------------------
+Top 10 Frequent Words in Actual Texts:
+the    278
+a      161
+in     142
+to     127
+he     119
+i       98
+is      97
+as      93
+for     81
+of      65
+----------------------------------------
+Top 10 Frequent Words in Predicted Texts:
+the    254
+a      247
+i      146
+to     141
+and    111
+in      99
+he      77
+for     72
+of      72
+is      64
+--------------------------------------------------------------------------------
+Generated Plots:
+ - text_analysis_reports\plots\Conformer_Conformer_Evaluation_results_sequence_ratio_hist.png
+ - text_analysis_reports\plots\Conformer_Conformer_Evaluation_results_jaccard_similarity_hist.png
+ - text_analysis_reports\plots\Conformer_Conformer_Evaluation_results_wordcount_vs_seqratio.png
+ - text_analysis_reports\plots\Conformer_Conformer_Evaluation_results_similarity_boxplot.png
+ - text_analysis_reports\plots\Conformer_Conformer_Evaluation_results_actual_wordcloud.png
+ - text_analysis_reports\plots\Conformer_Conformer_Evaluation_results_predicted_wordcloud.png
+================================================================================

@@ -1,0 +1,127 @@
+Model: wav2vec2
+File: C:\Users\A-plus store\OneDrive - MOE Stem Schools\Desktop\Work Done\Before Training Eval\wav2vec2_asr_evaluation_results.csv
+Analysis Date: 2025-02-13 18:18:37
+================================================================================
+
+Overall Shape: 3290 rows x 14 columns
+
+Column Data Types:
+Gender          object
+Speaker         object
+Session         object
+Prompt_File     object
+Audio_File      object
+Actual          object
+Predicted       object
+WER            float64
+CER            float64
+MER            float64
+WIL            float64
+Precision      float64
+Recall         float64
+F1-Score       float64
+
+--------------------------------------------------------------------------------
+Missing Values and Unique Counts per Column:
+Column 'Gender': Missing = 0, Unique = 2
+Column 'Speaker': Missing = 0, Unique = 8
+Column 'Session': Missing = 0, Unique = 3
+Column 'Prompt_File': Missing = 0, Unique = 415
+Column 'Audio_File': Missing = 0, Unique = 421
+Column 'Actual': Missing = 0, Unique = 528
+Column 'Predicted': Missing = 158, Unique = 2194
+Column 'WER': Missing = 0, Unique = 87
+Column 'CER': Missing = 0, Unique = 396
+Column 'MER': Missing = 0, Unique = 12
+Column 'WIL': Missing = 0, Unique = 22
+Column 'Precision': Missing = 0, Unique = 12
+Column 'Recall': Missing = 0, Unique = 8
+Column 'F1-Score': Missing = 0, Unique = 16
+
+--------------------------------------------------------------------------------
+Descriptive Statistics (Numeric Columns):
+               WER          CER          MER          WIL    Precision       Recall     F1-Score
+count  3290.000000  3290.000000  3290.000000  3290.000000  3290.000000  3290.000000  3290.000000
+mean      1.811413     1.852455     0.997261     0.999326     0.002970     0.003181     0.003027
+std       3.957051     5.156386     0.023764     0.007717     0.025682     0.026634     0.025472
+min       0.666667     0.700000     0.666667     0.833333     0.000000     0.000000     0.000000
+25%       1.000000     1.000000     1.000000     1.000000     0.000000     0.000000     0.000000
+50%       1.000000     1.000000     1.000000     1.000000     0.000000     0.000000     0.000000
+75%       1.000000     1.083333     1.000000     1.000000     0.000000     0.000000     0.000000
+max     111.000000   190.666667     1.000000     1.000000     0.500000     0.500000     0.400000
+
+--------------------------------------------------------------------------------
+Top 5 Frequent Values for Categorical Columns:
+
+Column 'Gender':
+Gender
+M    2142
+F    1148
+
+Column 'Speaker':
+Speaker
+F02    568
+M05    521
+F03    448
+M04    420
+M03    415
+
+Column 'Session':
+Session
+session_01    1544
+session_02    1537
+session_03     209
+
+Column 'Prompt_File':
+Prompt_File
+0096.txt    15
+0090.txt    15
+0084.txt    15
+0085.txt    15
+0086.txt    15
+
+Column 'Audio_File':
+Audio_File
+0094.wav    15
+0098.wav    15
+0083.wav    15
+0084.wav    15
+0085.wav    15
+
+Column 'Actual':
+Actual
+[relax your mouth in its normal position]    35
+xxx                                          33
+sip                                          31
+sigh                                         28
+air                                          26
+
+Column 'Predicted':
+Predicted
+NO      52
+HERE    29
+A       26
+O       23
+I       17
+
+--------------------------------------------------------------------------------
+Correlation Matrix (Numeric Columns):
+                WER       CER       MER       WIL  Precision    Recall  F1-Score
+WER        1.000000  0.900338  0.026945  0.021280  -0.026518 -0.025894 -0.026603
+CER        0.900338  1.000000  0.021879  0.016008  -0.021820 -0.021751 -0.022093
+MER        0.026945  0.021879  1.000000  0.910261  -0.963696 -0.954436 -0.970155
+WIL        0.021280  0.016008  0.910261  1.000000  -0.910003 -0.889524 -0.904794
+Precision -0.026518 -0.021820 -0.963696 -0.910003   1.000000  0.965153  0.991344
+Recall    -0.025894 -0.021751 -0.954436 -0.889524   0.965153  1.000000  0.990721
+F1-Score  -0.026603 -0.022093 -0.970155 -0.904794   0.991344  0.990721  1.000000
+
+================================================================================
+Generated Plots:
+ - analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_correlation_heatmap.png
+ - analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_WER_histogram.png
+ - analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_CER_histogram.png
+ - analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_MER_histogram.png
+ - analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_WIL_histogram.png
+ - analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_Precision_histogram.png
+ - analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_Recall_histogram.png
+ - analysis_reports\plots\wav2vec2_wav2vec2_asr_evaluation_results_F1-Score_histogram.png
